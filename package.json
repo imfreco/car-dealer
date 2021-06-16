@@ -8,7 +8,8 @@
     "migration:create": "ts-node node_modules/typeorm/cli.js migration:create --config ./ormconfig.json --name",
     "migration:gen": "ts-node node_modules/typeorm/cli.js migration:generate --config ./ormconfig.json --name",
     "migration:run": "ts-node node_modules/typeorm/cli.js migration:run --config ./ormconfig.json",
-    "migration:rev": "ts-node node_modules/typeorm/cli.js migration:revert --config ./ormconfig.json"
+    "migration:rev": "ts-node node_modules/typeorm/cli.js migration:revert --config ./ormconfig.json",
+    "migration:reset": "npm run migration:rev && npm run migration:run"
   },
   "author": "Fredy Cortes",
   "license": "MIT",
