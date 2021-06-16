@@ -1,0 +1,13 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 5433,
+  "username": "set_your_username",
+  "password": "set_your_password",
+  "database": "set_your_database",
+  "entities": ["set_your_entities_path"],
+  "migrations": ["set_your_migrations_path"],
+  "cli": {
+    "migrationsDir": "set_your_migrations_path"
+  }
+}

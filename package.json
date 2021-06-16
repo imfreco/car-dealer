@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "ts-node-dev src/index.ts"
+    "start:dev": "ts-node-dev src/index.ts",
+    "migration:create": "ts-node node_modules/typeorm/cli.js migration:create --config ./ormconfig.json --name",
+    "migration:gen": "ts-node node_modules/typeorm/cli.js migration:generate --config ./ormconfig.json --name",
+    "migration:run": "ts-node node_modules/typeorm/cli.js migration:run --config ./ormconfig.json",
+    "migration:rev": "ts-node node_modules/typeorm/cli.js migration:revert --config ./ormconfig.json"
   },
   "author": "Fredy Cortes",
   "license": "MIT",
   "dependencies": {
     "apollo-server-express": "^2.25.1",
     "express": "^4.17.1",
-    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.1.1",
     "typeorm": "^0.2.34"
